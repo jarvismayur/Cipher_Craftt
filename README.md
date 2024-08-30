@@ -43,6 +43,12 @@ cipher_craftt  --record-password your-new-password
 cipher_craftt  --check-expiry your-password
 ```
 
+- To calculate the entropy of the pasword
+
+```bash
+cipher_craft --calculate-entropy your-password
+```
+
 
 
 ## License

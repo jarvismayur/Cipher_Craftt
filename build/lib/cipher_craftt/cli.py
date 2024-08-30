@@ -3,11 +3,13 @@ from .generator import generate_password
 from .strength_checker import check_strength
 from .passphrase_generator import generate_passphrase
 from .expiry_checker import check_password_expiry, record_password_creation
+from .entropy_calculator import calculate_entropy
 
 def main():
     parser = argparse.ArgumentParser(description="Cipher-Craftt - Password and Passphrase Generator")
     parser.add_argument("--generate-password", action="store_true", help="Generate a random password")
     parser.add_argument("--generate-passphrase", action="store_true", help="Generate a passphrase")
+    parser.add_argument("--calculate-entropy", type=str, help="Return  the entropy of your password")
     parser.add_argument("--check-expiry", type=str, help="Check if a password has expired")
     parser.add_argument("--record-password", type=str, help="Record the creation date of a new password")
     parser.add_argument("-l", "--length", type=int, default=12, help="Length of the password")
@@ -55,6 +57,10 @@ def main():
     if args.record_password:
         record_password_creation(args.record_password)
         print(f"Password recorded with creation date.")
+    
+    if args.calculate_entropy:
+        result = calculate_entropy(password=args.calculate_entropy)
+        print(f'Entropy of your given password {args.calculate_entropy} is  {result}')
 
 if __name__ == "__main__":
     main()

@@ -4,6 +4,7 @@ pyproject.toml
 setup.py
 cipher_craftt/__init__.py
 cipher_craftt/cli.py
+cipher_craftt/entropy_calculator.py
 cipher_craftt/expiry_checker.py
 cipher_craftt/generator.py
 cipher_craftt/passphrase_generator.py

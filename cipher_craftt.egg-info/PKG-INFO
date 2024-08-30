@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: cipher-craftt
-Version: 0.1.11
+Version: 0.1.12
 Summary: A simple password generator tool.
 Home-page: https://github.com/jarvismayur/ciphercraft
 Author: Mayur Tembhare
@@ -62,6 +62,11 @@ cipher_craftt  --record-password your-new-password
 ```bash
 cipher_craftt  --check-expiry your-password
 ```
+
+- To calculate the entropy of the pasword
+
+```bash
+cipher_craft --calculate-entropy 
 
 
 
