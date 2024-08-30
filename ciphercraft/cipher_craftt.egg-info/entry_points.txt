@@ -1,0 +1,2 @@
+[console_scripts]
+cipher_craftt = cipher_craftt.cli:main
