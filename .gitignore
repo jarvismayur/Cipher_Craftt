@@ -1,0 +1,42 @@
+# Compiled Python files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# IDE and Editor configurations
+.vscode/
+.idea/
+.project
+.pydevproject
+
+# Build and distribution
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Temporary files
+*.log
+*.tmp
+*.swp
+.DS_Store
+
+# Configuration files
+.env
+.env.local
+
+# Testing artifacts
+*.coverage
+.tox/
+.nox/
+.coverage
+
+# Database files
+*.sqlite3
+*.db
