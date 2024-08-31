@@ -4,7 +4,6 @@
 from .generator import generate_password
 from .passphrase_generator import generate_passphrase
 from .strength_checker import check_strength
-from .expiry_checker import check_password_expiry, record_password_creation
 from .entropy_calculator import calculate_entropy
 from .obfuscator import obfuscate_password
 from .breach_checker import check_breach

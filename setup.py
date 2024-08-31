@@ -2,8 +2,8 @@ from setuptools import setup, find_packages
 
 setup(
     name="cipher-craftt",
-    version="0.1.12",
-    description="A simple password generator tool.",
+    version="0.1.15",
+    description="A comprehensive tool for password management including generation, strength checking, expiry tracking, and secure sharing.",
     long_description=open('README.md').read(),
     long_description_content_type="text/markdown",
     author="Mayur Tembhare",
@@ -15,8 +15,11 @@ setup(
             'cipher_craftt = cipher_craftt.cli:main',
         ],
     },
+    install_requires=[
+        'cryptography',  # Add cryptography here
+    ],
     classifiers=[
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 4 - Beta',  # Adjusted to Beta to reflect a more stable version
         'Intended Audience :: Developers',
         'License :: OSI Approved :: Apache Software License',
         'Programming Language :: Python :: 3',
@@ -25,6 +28,7 @@ setup(
         'Programming Language :: Python :: 3.10',
         'Programming Language :: Python :: 3.11',
         'Programming Language :: Python :: 3.12',
+        'Operating System :: OS Independent',  # Added for clarity on compatibility
     ],
     python_requires='>=3.6',
 )

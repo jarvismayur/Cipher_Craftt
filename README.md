@@ -80,4 +80,4 @@ cipher_craftt --decrypt-password "EncryptedPasswordHere" "KeyHere"
 
 
 ## License
-CipherCraft is licensed under the MIT License. See the LICENSE file for details.
+CipherCraft is licensed under the MIT [License](https://github.com/jarvismayur/Cipher_Craftt/blob/main/LICENSE). See the LICENSE file for details.
