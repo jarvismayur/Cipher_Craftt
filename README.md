@@ -10,7 +10,7 @@ CipherCraft is a versatile and secure password generator designed to help you cr
 - **Data Breach Checker**: Check if your passwords have been compromised in data breaches to avoid using vulnerable passwords.
 - **Secure Password Sharing**: Share passwords securely with time-limited, expiring links to ensure safe transmission.
 - **Password History Management**: Maintain a secure history of generated passwords to prevent reuse and enhance security.
-- **Custom Password Policies**: Define and apply custom password policies to ensure compliance with specific security requirements.
+- **Custom Password Policies**: Define and apply custom password policies to ensure compliance with specific security requirements. 
 - **Password Pronunciation Guide**: Generate passwords that are easy to pronounce, making them simpler to share verbally.
   
 ## Installation
@@ -46,9 +46,37 @@ cipher_craftt  --check-expiry your-password
 - To calculate the entropy of the pasword
 
 ```bash
-cipher_craft --calculate-entropy your-password
+cipher_craftt --calculate-entropy your-password
 ```
 
+- Generate a Password with Obfuscation Level 1:
+
+```bash
+cipher_craftt --generate-password --length 12 --obfuscate 1
+```
+- Generate a Passphrase with Obfuscation Level 2:
+
+```bash
+cipher_craftt --generate-passphrase --wordlist my_wordlist.txt --obfuscate 2
+```
+
+- You can test the data breach checker by running the command:
+
+```bash
+cipher_craftt --check-breach "yourpassword"
+```
+- Encrypt and Share a Password:
+
+```bash
+cipher_craftt --share-password "YourSecurePassword123"
+```
+
+
+- Decrypt the Shared Password:
+
+```bash
+cipher_craftt --decrypt-password "EncryptedPasswordHere" "KeyHere"
+```
 
 
 ## License
