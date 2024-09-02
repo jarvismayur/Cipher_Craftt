@@ -19,77 +19,159 @@ You can install CipherCraft via PyPI:
 ```bash
 pip install cipher-craftt
 ```
-## Usage
-- To generate a password or passphrase, use the command-line interface:
+## Basic Usage
+To use the CLI, run the following command:
 
 ```bash
- cipher_craftt --generate-password --length 16 --no-digits --obfuscate
+python cli.py [options]
 ```
-- To generate a passphrase:
+## Available Options
+1. Password Generation
+- `--generate-password`: Generates a random password.
 
 ```bash
-cipher_craftt  --generate-passphrase --wordlist path/to/wordlist.txt --num-words 5 --separator '-'
+python cli.py --generate-password
 ```
+Options:
 
-- To record the creation date of a new password:
+- `-l, --length`: Length of the generated password (default: 12).
+- `-u, --no-upper`: Exclude uppercase letters.
+- `-lo, --no-lower`: Exclude lowercase letters.
+- `-d, --no-digits`: Exclude digits.
+- `-s, --no-special`: Exclude special characters.
+- `--exclude-chars`: Characters to exclude from the password.
+- `--min-digits`: Minimum number of digits required (default: 0).
+- `--min-special`: Minimum number of special characters required (default: 0).
+- `--salting`: Apply passphrase-based salting to the password.
+- `--personalization`: Personalized input to include in the password.
+- `--file_path`: Path to a file containing common words (e.g., common_words.txt).
+- `--obfuscate`: Apply obfuscation to the password (level 1, 2, or 3).
+
+2. Passphrase Generation
+-  `--generate-passphrase`: Generates a passphrase based on a word list.
 
 ```bash
-cipher_craftt  --record-password your-new-password
+python cli.py --generate-passphrase --wordlist path/to/wordlist.txt
 ```
+Options:
 
-- To check password expiry:
+- `--num-words`: Number of words in the passphrase (default: 4).
+- `--separator`: Separator between words in the passphrase (default: '-').
+- `--obfuscate`: Apply obfuscation to the passphrase (level 1, 2, or 3).
+
+3. Password Entropy
+- `--calculate-entropy`: Calculate the entropy of a given password.
 
 ```bash
-cipher_craftt  --check-expiry your-password
+python cli.py --calculate-entropy your_password
 ```
-- To check history of password:
+4. Password Expiry Check
+- `--check-expiry`: Check if a password has expired.
 
 ```bash
-cipher_craftt  --check-history your-password
+python cli.py --check-expiry your_password
 ```
-- To calculate the entropy of the pasword
+Options:
+
+- `--expiry-days`: Number of days before a password expires (default: 90).
+5. Password History Management
+- `--record-password`: Record the creation date of a new password.
 
 ```bash
-cipher_craftt --calculate-entropy your-password
+python cli.py --record-password your_password
 ```
-
-- Generate a Password with Obfuscation Level 1:
+- `--check-history`: Check if a password has been used before.
 
 ```bash
-cipher_craftt --generate-password --length 12 --obfuscate 1
+python cli.py --check-history your_password
 ```
-- Generate a Passphrase with Obfuscation Level 2:
+- `--max-history`: Limit the number of stored passwords in history.
 
 ```bash
-cipher_craftt --generate-passphrase --wordlist my_wordlist.txt --obfuscate 2
+python cli.py --max-history 100
 ```
-
-- You can test the data breach checker by running the command:
+6. Data Breach Check
+- `--check-breach`: Check if a password has been involved in a data breach.
 
 ```bash
-cipher_craftt --check-breach "yourpassword"
+python cli.py --check-breach your_password
 ```
-- Encrypt and Share a Password:
+7. Secure Password Sharing
+- `--share-password`: Encrypt and share a password securely.
 
 ```bash
-cipher_craftt --share-password "YourSecurePassword123"
+python cli.py --share-password your_password
 ```
-
-
-- Decrypt the Shared Password:
+- `--decrypt-password`: Decrypt a shared password.
 
 ```bash
-cipher_craftt --decrypt-password "EncryptedPasswordHere" "KeyHere"
+python cli.py --decrypt-password encrypted_password key
 ```
+8. Pronunciation Guide
+- `--pronunciation-guide`: Generate a pronunciation guide for a password.
 
-- For Pronunciation Guide:
 ```bash
-cipher_craftt --pronunciation-guide your-password 
+python cli.py --pronunciation-guide your_password
 ```
+9. Password Strength Check
+- `--check-strength`: Check the strength of the given password.
 
-- For Checking the Strength Password:
 ```bash
-cipher_craftt --check-strength your-password
+python cli.py --check-strength your_password
+```
+10. Mnemonic Password Generation
+- `--generate-mnemonic`: Generate a mnemonic-based password.
+
+```bash
+python cli.py --generate-mnemonic --wordlist path/to/wordlist.txt
+```
+Options:
+
+- `--num-words`: Number of words in the mnemonic password (default: 4).
+- `--separator`: Separator between words in the mnemonic password (default: '-').
+- `--length`: Length of the mnemonic password.
+11. Context-Aware Password Generation
+- `--context`: Specify the context for the password generation (e.g., finance, social, work).
+
+```bash
+python cli.py --generate-password --context finance
+```
+12. TOTP (Time-based One-Time Password)
+- `--generate-totp`: Generate a TOTP using the provided secret.
+
+```bash
+python cli.py --generate-totp your_secret
+```
+- `--verify-totp`: Verify a TOTP using the provided secret and OTP.
+
+```bash
+python cli.py --verify-totp your_secret your_otp
+```
+## Examples
+- Generate a password with specific constraints:
+
+```bash
+python cli.py --generate-password -l 16 --no-special --min-digits 2 --personalization "MySecret!"
+```
+- Generate a passphrase with a custom word list and separator:
+
+```bash
+python cli.py --generate-passphrase --wordlist path/to/wordlist.txt --separator "_"
+```
+- Check if a password has expired:
+
+```bash
+python cli.py --check-expiry your_password --expiry-days 60
+```
+- Encrypt and share a password securely:
+
+```bash
+python cli.py --share-password your_password
+```
+- Generate a TOTP:
+
+```bash
+python cli.py --generate-totp your_secret
 ```
 
 
