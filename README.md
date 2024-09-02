@@ -82,9 +82,14 @@ cipher_craftt --share-password "YourSecurePassword123"
 cipher_craftt --decrypt-password "EncryptedPasswordHere" "KeyHere"
 ```
 
-- For Pronunciation Guide
+- For Pronunciation Guide:
 ```bash
 cipher_craftt --pronunciation-guide your-password 
+```
+
+- For Checking the Strength Password:
+```bash
+cipher_craftt --check-strength your-password
 ```
 
 

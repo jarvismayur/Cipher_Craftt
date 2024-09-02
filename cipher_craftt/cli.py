@@ -20,6 +20,7 @@ def main():
     parser.add_argument("--share-password", type=str, help="Encrypt and share a password securely")
     parser.add_argument("--decrypt-password", nargs=2, help="Decrypt a shared password")
     parser.add_argument("--check-history", type=str, help="Check if the password has been used before")
+    parser.add_argument("--check-strength",type=str, help="Check the strength of the given password" )
     parser.add_argument("--max-history", type=int, help="Limit the number of stored passwords in history")
     parser.add_argument("-l", "--length", type=int, default=12, help="Length of the password")
     parser.add_argument("-u", "--no-upper", action="store_true", help="Exclude uppercase letters")
@@ -136,5 +137,10 @@ def main():
         guide = generate_pronunciation(args.pronunciation_guide)
         print(f"Pronunciation Guide for '{args.pronunciation_guide}': {guide}")
 
+    if args.check_strength:
+        strength = check_strength(args.check_strength)
+        print(f"Strength for the '{args.check_strength}' is : {strength}")
+
+        
 if __name__ == "__main__":
     main()
