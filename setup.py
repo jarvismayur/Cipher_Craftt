@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="cipher-craftt",
-    version="0.1.16",
+    version="0.1.17",
     description="A comprehensive tool for password management including generation, strength checking, expiry tracking, and secure sharing.",
     long_description=open('README.md').read(),
     long_description_content_type="text/markdown",
