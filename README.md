@@ -1,6 +1,9 @@
 # CipherCraft
 CipherCraft is a versatile and secure password generator designed to help you create strong, memorable passwords with ease. With a range of customizable features and unique tools, CipherCraft ensures your passwords are not only secure but also tailored to your needs.
 
+- For detailed documentation and usage instructions, please visit our [Read the Docs page](https://cipher-craftt.readthedocs.io).
+- You can also explore the source code and contribute to the project on our [GitHub repository](https://github.com/jarvismayur/cipher-craftt).
+
 ## Features
 CipherCraft offers a wide range of features to help you securely generate, manage, and share passwords and passphrases:
 
