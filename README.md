@@ -42,7 +42,11 @@ cipher_craftt  --record-password your-new-password
 ```bash
 cipher_craftt  --check-expiry your-password
 ```
+- To check history of password:
 
+```bash
+cipher_craftt  --check-history your-password
+```
 - To calculate the entropy of the pasword
 
 ```bash
