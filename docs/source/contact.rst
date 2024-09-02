@@ -1,4 +1,4 @@
-Contact and Issues
-==================
+Contact and Support
+===================
 
-If you have any questions, suggestions, or encounter issues, please feel free to open an issue on the GitHub repository. For direct communication, you can reach out to Mayur Tembhare via email at [tembharemayur@gmail.com](mailto:tembharemayur@gmail.com).
+If you have any questions, suggestions, or encounter any issues, please don't hesitate to open an issue on our GitHub repository. For direct inquiries, you can reach out to Mayur Tembhare via email at `tembharemayur@gmail.com <mailto:tembharemayur@gmail.com>`_. We appreciate your feedback and are here to help!

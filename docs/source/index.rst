@@ -7,9 +7,8 @@ Welcome to CipherCraft's Documentation!
 
    introduction
    installation
-   usage
    features
-   cli_commands
+   usage
    examples
    license
    contact

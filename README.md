@@ -1,17 +1,37 @@
 # CipherCraft
 CipherCraft is a versatile and secure password generator designed to help you create strong, memorable passwords with ease. With a range of customizable features and unique tools, CipherCraft ensures your passwords are not only secure but also tailored to your needs.
 
- ## Key Features
-- **Passphrase Generation**: Generate easy-to-remember passphrases from a customizable wordlist, perfect for both security and memorability.
-- **Password Expiry Checker**: Track the age of your passwords and receive reminders to update them regularly to maintain security.
-- **Entropy Calculation**: Evaluate the strength of your passwords with entropy metrics, providing a numeric value for better security assessment.
-- **Customizable Wordlists**: Use your own wordlists or choose from various pre-defined ones to create unique passphrases.
-- **Password Obfuscation**: Enhance security by obfuscating your passphrases with common letter-to-symbol substitutions.
-- **Data Breach Checker**: Check if your passwords have been compromised in data breaches to avoid using vulnerable passwords.
-- **Secure Password Sharing**: Share passwords securely with time-limited, expiring links to ensure safe transmission.
-- **Password History Management**: Maintain a secure history of generated passwords to prevent reuse and enhance security.
-- **Custom Password Policies**: Define and apply custom password policies to ensure compliance with specific security requirements. 
-- **Password Pronunciation Guide**: Generate passwords that are easy to pronounce, making them simpler to share verbally.
+## Features
+CipherCraft offers a wide range of features to help you securely generate, manage, and share passwords and passphrases:
+
+1. **Password and Passphrase Generation**
+- **Random Password Generator**: Generate strong, random passwords with customizable options such as length, inclusion/exclusion of uppercase letters, lowercase letters, digits, and special characters.
+- **Context-Aware Password Generator**: Generate passwords tailored to specific contexts, such as finance, social media, or work environments.
+- **Mnemonic Password Generator**: Create mnemonic-based passwords using a custom wordlist, making them easier to remember.
+- **Passphrase Generator**: Generate secure passphrases composed of random words from a user-defined wordlist, with customizable separators.
+2. **Password Strength and Entropy**
+- **Password Strength Checker**: Evaluate the strength of a given password to ensure its robustness against attacks.
+- **Entropy Calculator**: Calculate the entropy of a password, giving you an indication of its unpredictability and security level.
+3. **Password History Management**
+- **Password History Checker**: Verify if a password has been used before, helping to prevent reuse of old passwords.
+- **Password Expiry Checker**: Check if a password has expired based on a specified number of days.
+- **Password Creation Recorder**: Record the creation date of a new password for tracking and expiry purposes.
+- **Limit Password History**: Set a limit on the number of stored passwords in history to maintain a clean and secure password management process.
+4. **Obfuscation and Pronunciation Guide**
+- **Password Obfuscator**: Obfuscate your password to different levels (1, 2, or 3) for enhanced security.
+- **Pronunciation Guide**: Generate a pronunciation guide for a given password to make it easier to recall.
+5. **Secure Sharing and Breach Detection**
+- **Secure Password Sharing**: Encrypt and securely share passwords using a generated key.
+- **Password Decryption**: Decrypt a shared password using the provided key.
+- **Data Breach Checker**: Check if your password has been involved in any known data breaches, ensuring its safety.
+6. **Time-Based One-Time Password (TOTP)**
+- **TOTP Generation**: Generate a Time-Based One-Time Password (TOTP) using a provided secret, for use in two-factor authentication.
+- **TOTP Verification**: Verify the validity of a TOTP using the provided secret and OTP.
+7. **Advanced Customization**
+- **Salting**: Apply passphrase-based salting to generated passwords for added security.
+- **Personalization**: Incorporate personalized inputs (e.g., names, favorite numbers) into password generation for more tailored security.
+- **Common Words Filtering**: Exclude common words from the password using a custom dictionary file to enhance password security.
+
   
 ## Installation
 You can install CipherCraft via PyPI:
@@ -35,7 +55,7 @@ To use the CLI, run the following command:
 python cli.py [options]
 ```
 ## Available Options
-1. Password Generation
+1. **Password Generation**
 - `--generate-password`: Generates a random password.
 
 ```bash
@@ -56,7 +76,7 @@ Options:
 - `--file_path`: Path to a file containing common words (e.g., common_words.txt).
 - `--obfuscate`: Apply obfuscation to the password (level 1, 2, or 3).
 
-2. Passphrase Generation
+2. **Passphrase Generation**
 -  `--generate-passphrase`: Generates a passphrase based on a word list.
 
 ```bash
@@ -68,13 +88,13 @@ Options:
 - `--separator`: Separator between words in the passphrase (default: '-').
 - `--obfuscate`: Apply obfuscation to the passphrase (level 1, 2, or 3).
 
-3. Password Entropy
+3. **Password Entropy**
 - `--calculate-entropy`: Calculate the entropy of a given password.
 
 ```bash
 python cli.py --calculate-entropy your_password
 ```
-4. Password Expiry Check
+4. **Password Expiry Check**
 - `--check-expiry`: Check if a password has expired.
 
 ```bash
@@ -83,7 +103,7 @@ python cli.py --check-expiry your_password
 Options:
 
 - `--expiry-days`: Number of days before a password expires (default: 90).
-5. Password History Management
+5. **Password History Management**
 - `--record-password`: Record the creation date of a new password.
 
 ```bash
@@ -99,13 +119,13 @@ python cli.py --check-history your_password
 ```bash
 python cli.py --max-history 100
 ```
-6. Data Breach Check
+6. **Data Breach Check**
 - `--check-breach`: Check if a password has been involved in a data breach.
 
 ```bash
 python cli.py --check-breach your_password
 ```
-7. Secure Password Sharing
+7. **Secure Password Sharing**
 - `--share-password`: Encrypt and share a password securely.
 
 ```bash
@@ -116,19 +136,19 @@ python cli.py --share-password your_password
 ```bash
 python cli.py --decrypt-password encrypted_password key
 ```
-8. Pronunciation Guide
+8. **Pronunciation Guide**
 - `--pronunciation-guide`: Generate a pronunciation guide for a password.
 
 ```bash
 python cli.py --pronunciation-guide your_password
 ```
-9. Password Strength Check
+9. **Password Strength Check**
 - `--check-strength`: Check the strength of the given password.
 
 ```bash
 python cli.py --check-strength your_password
 ```
-10. Mnemonic Password Generation
+10. **Mnemonic Password Generation**
 - `--generate-mnemonic`: Generate a mnemonic-based password.
 
 ```bash
@@ -139,7 +159,7 @@ Options:
 - `--num-words`: Number of words in the mnemonic password (default: 4).
 - `--separator`: Separator between words in the mnemonic password (default: '-').
 - `--length`: Length of the mnemonic password.
-11. Context-Aware Password Generation
+11. **Context-Aware Password Generation**
 - `--context`: Specify the context for the password generation (e.g., finance, social, work).
 
 ```bash

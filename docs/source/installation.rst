@@ -1,14 +1,19 @@
 Installation
 ============
 
-You can install CipherCraft via PyPI with the following command:
+You can install CipherCraft via PyPI:
 
 .. code-block:: bash
 
-   pip install cipher-craftt
+    pip install cipher-craftt
 
-To update the package to the latest version, run:
+Updating the Package
+====================
+
+To ensure you have the latest features and improvements, you can easily update the CipherCraft package using pip. Open your command line interface and run the following command:
 
 .. code-block:: bash
 
-   pip install --upgrade cipher-craftt
+    pip install --upgrade cipher-craftt
+
+This command will update your CipherCraft package to the latest version available on `PyPI <https://pypi.org/project/cipher-craftt/>`_.
