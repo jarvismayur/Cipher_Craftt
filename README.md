@@ -78,6 +78,11 @@ cipher_craftt --share-password "YourSecurePassword123"
 cipher_craftt --decrypt-password "EncryptedPasswordHere" "KeyHere"
 ```
 
+- For Pronunciation Guide
+```bash
+cipher_craftt --pronunciation-guide your-password 
+```
+
 
 ## License
 CipherCraft is licensed under the MIT [License](https://github.com/jarvismayur/Cipher_Craftt/blob/main/LICENSE). See the LICENSE file for details.

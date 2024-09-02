@@ -7,6 +7,7 @@ from .obfuscator import obfuscate_password
 from .breach_checker import check_breach
 from .secure_sharing import generate_key, encrypt_password, decrypt_password
 from .password_history import add_password_to_history,check_password_expiry,record_password_creation, limit_password_history, check_password_in_history, limit_password_history  # Import history functions
+from .pronunciation_guide import generate_pronunciation
 
 def main():
     parser = argparse.ArgumentParser(description="Cipher-Craftt - Password and Passphrase Generator")
@@ -30,6 +31,7 @@ def main():
     parser.add_argument("--separator", type=str, default='-', help="Separator between words in the passphrase")
     parser.add_argument("--expiry-days", type=int, default=90, help="Number of days before a password expires")
     parser.add_argument("--obfuscate", type=int, choices=[1, 2, 3], help="Obfuscate the password (level 1, 2, or 3)")
+    parser.add_argument("--pronunciation-guide", type=str, help="Generate a pronunciation guide for a password")
 
     args = parser.parse_args()
 
@@ -129,6 +131,10 @@ def main():
     # Limit the number of stored passwords in history
     if args.max_history:
         limit_password_history(max_history=args.max_history)
+    
+    if args.pronunciation_guide:
+        guide = generate_pronunciation(args.pronunciation_guide)
+        print(f"Pronunciation Guide for '{args.pronunciation_guide}': {guide}")
 
 if __name__ == "__main__":
     main()
