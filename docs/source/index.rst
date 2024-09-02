@@ -13,9 +13,3 @@ Welcome to CipherCraft's Documentation!
    license
    contact
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
