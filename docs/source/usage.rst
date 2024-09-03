@@ -11,6 +11,7 @@ Available Options
 -----------------
 
 1. **Password Generation**
+
    - ``--generate-password``: Generates a random password.
 
    .. code-block:: bash
@@ -33,6 +34,7 @@ Available Options
    - ``--obfuscate``: Apply obfuscation to the password (level 1, 2, or 3).
 
 2. **Passphrase Generation**
+
    - ``--generate-passphrase``: Generates a passphrase based on a word list.
 
    .. code-block:: bash
@@ -46,6 +48,7 @@ Available Options
    - ``--obfuscate``: Apply obfuscation to the passphrase (level 1, 2, or 3).
 
 3. **Password Entropy**
+
    - ``--calculate-entropy``: Calculate the entropy of a given password.
 
    .. code-block:: bash
@@ -53,6 +56,7 @@ Available Options
         cipher-craftt --calculate-entropy your_password
 
 4. **Password Expiry Check**
+
    - ``--check-expiry``: Check if a password has expired.
 
    .. code-block:: bash
@@ -64,6 +68,7 @@ Available Options
    - ``--expiry-days``: Number of days before a password expires (default: 90).
 
 5. **Password History Management**
+
    - ``--record-password``: Record the creation date of a new password.
 
    .. code-block:: bash
@@ -83,6 +88,7 @@ Available Options
         cipher-craftt --max-history 100
 
 6. **Data Breach Check**
+
    - ``--check-breach``: Check if a password has been involved in a data breach.
 
    .. code-block:: bash
@@ -90,6 +96,7 @@ Available Options
         cipher-craftt --check-breach your_password
 
 7. **Secure Password Sharing**
+
    - ``--share-password``: Encrypt and share a password securely.
 
    .. code-block:: bash
@@ -103,6 +110,7 @@ Available Options
         cipher-craftt --decrypt-password encrypted_password key
 
 8. **Pronunciation Guide**
+
    - ``--pronunciation-guide``: Generate a pronunciation guide for a password.
 
    .. code-block:: bash
@@ -110,6 +118,7 @@ Available Options
         cipher-craftt --pronunciation-guide your_password
 
 9. **Password Strength Check**
+
    - ``--check-strength``: Check the strength of the given password.
 
    .. code-block:: bash
@@ -117,6 +126,7 @@ Available Options
         cipher-craftt --check-strength your_password
 
 10. **Mnemonic Password Generation**
+
     - ``--generate-mnemonic``: Generate a mnemonic-based password.
 
     .. code-block:: bash
@@ -129,7 +139,9 @@ Available Options
     - ``--separator``: Separator between words in the mnemonic password (default: '-').
     - ``--length``: Length of the mnemonic password.
 
+
 11. **Context-Aware Password Generation**
+
     - ``--context``: Specify the context for the password generation (e.g., finance, social, work).
 
     .. code-block:: bash
@@ -137,6 +149,7 @@ Available Options
         cipher-craftt --generate-password --context finance
 
 12. **TOTP (Time-based One-Time Password)**
+
     - ``--generate-totp``: Generate a TOTP using the provided secret.
 
     .. code-block:: bash
