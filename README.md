@@ -58,7 +58,7 @@ To use the CLI, run the following command:
 python cli.py [options]
 ```
 ## Available Options
-1. **Password Generation**
+### 1. **Password Generation**
 - `--generate-password`: Generates a random password.
 
 ```bash
@@ -79,7 +79,7 @@ Options:
 - `--file_path`: Path to a file containing common words (e.g., common_words.txt).
 - `--obfuscate`: Apply obfuscation to the password (level 1, 2, or 3).
 
-2. **Passphrase Generation**
+### 2. **Passphrase Generation**
 -  `--generate-passphrase`: Generates a passphrase based on a word list.
 
 ```bash
@@ -105,13 +105,13 @@ Options:
   - `sv` : Swedish 
   - `tr` : Turkish 
 
-1. **Password Entropy**
+### 3. **Password Entropy**
 - `--calculate-entropy`: Calculate the entropy of a given password.
 
 ```bash
 python cli.py --calculate-entropy your_password
 ```
-4. **Password Expiry Check**
+### 4. **Password Expiry Check**
 - `--check-expiry`: Check if a password has expired.
 
 ```bash
@@ -120,7 +120,7 @@ python cli.py --check-expiry your_password
 Options:
 
 - `--expiry-days`: Number of days before a password expires (default: 90).
-5. **Password History Management**
+### 5. **Password History Management**
 - `--record-password`: Record the creation date of a new password.
 
 ```bash
@@ -136,13 +136,13 @@ python cli.py --check-history your_password
 ```bash
 python cli.py --max-history 100
 ```
-6. **Data Breach Check**
+### 6. **Data Breach Check**
 - `--check-breach`: Check if a password has been involved in a data breach.
 
 ```bash
 python cli.py --check-breach your_password
 ```
-7. **Secure Password Sharing**
+### 7. **Secure Password Sharing**
 - `--share-password`: Encrypt and share a password securely.
 
 ```bash
@@ -153,19 +153,19 @@ python cli.py --share-password your_password
 ```bash
 python cli.py --decrypt-password encrypted_password key
 ```
-8. **Pronunciation Guide**
+### 8. **Pronunciation Guide**
 - `--pronunciation-guide`: Generate a pronunciation guide for a password.
 
 ```bash
 python cli.py --pronunciation-guide your_password
 ```
-9. **Password Strength Check**
+### 9. **Password Strength Check**
 - `--check-strength`: Check the strength of the given password.
 
 ```bash
 python cli.py --check-strength your_password
 ```
-10. **Mnemonic Password Generation**
+### 10. **Mnemonic Password Generation**
 - `--generate-mnemonic`: Generate a mnemonic-based password.
 
 ```bash
@@ -176,13 +176,13 @@ Options:
 - `--num-words`: Number of words in the mnemonic password (default: 4).
 - `--separator`: Separator between words in the mnemonic password (default: '-').
 - `--length`: Length of the mnemonic password.
-11. **Context-Aware Password Generation**
+### 11. **Context-Aware Password Generation**
 - `--context`: Specify the context for the password generation (e.g., finance, social, work).
 
 ```bash
 python cli.py --generate-password --context finance
 ```
-12. TOTP (Time-based One-Time Password)
+### 12. TOTP (Time-based One-Time Password)
 - `--generate-totp`: Generate a TOTP using the provided secret.
 
 ```bash
