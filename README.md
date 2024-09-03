@@ -83,15 +83,29 @@ Options:
 -  `--generate-passphrase`: Generates a passphrase based on a word list.
 
 ```bash
-python cli.py --generate-passphrase --wordlist path/to/wordlist.txt
+python cli.py --generate-passphrase 
 ```
 Options:
 
 - `--num-words`: Number of words in the passphrase (default: 4).
 - `--separator`: Separator between words in the passphrase (default: '-').
 - `--obfuscate`: Apply obfuscation to the passphrase (level 1, 2, or 3).
+- `--wordlist` : Your custom wordlist can also be used.
+- `--language`: Multiple language wordlist available.
+  - `da` : Danish
+  - `de` : German
+  - `en` : Enlish ( default )
+  - `es` : Spanish 
+  - `fr` : French
+  - `it` : Italian
+  - `nl` : Dutch 
+  - `no` : Norwegian 
+  - `pl` : Polish 
+  - `pt` : Portuguese 
+  - `sv` : Swedish 
+  - `tr` : Turkish 
 
-3. **Password Entropy**
+1. **Password Entropy**
 - `--calculate-entropy`: Calculate the entropy of a given password.
 
 ```bash
