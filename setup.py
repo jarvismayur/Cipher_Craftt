@@ -31,4 +31,7 @@ setup(
         'Operating System :: OS Independent',  # Added for clarity on compatibility
     ],
     python_requires='>=3.6',
+    package_data={
+        'cipher_craftt': ['wordlist/languages/*.txt'],  # Include wordlists in the package
+    },
 )

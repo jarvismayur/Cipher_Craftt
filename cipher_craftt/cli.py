@@ -46,6 +46,7 @@ def main():
     parser.add_argument("--salting", action="store_true", help="Apply passphrase-based salting to the password")
     parser.add_argument("--personalization", type=str, help="Personalized input to include in the password (e.g., names, favorite numbers)")
     parser.add_argument("--file_path", type=str, help="File path for the dictionary. Like : comman_words.txt " )
+    parser.add_argument("--language", type=str, help="Choose a the language for the Passpharse to be generated in.")
 
     args = parser.parse_args()
 
@@ -83,17 +84,12 @@ def main():
             limit_password_history(max_history=args.max_history)
 
     if args.generate_passphrase:
-        if not args.wordlist:
-            print("Error: --wordlist argument is required for passphrase generation.")
-            return
-        
-        with open(args.wordlist) as f:
-            wordlist = [line.strip() for line in f]
         
         passphrase = generate_passphrase(
-            wordlist=wordlist,
+            wordlist=args.wordlist,
             num_words=args.num_words,
-            separator=args.separator
+            separator=args.separator,
+            language = args.language
         )
 
         # Apply obfuscation if requested
