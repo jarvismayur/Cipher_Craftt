@@ -259,4 +259,4 @@ python cli.py --generate-totp your_secret
 CipherCraft is licensed under the MIT [License](https://github.com/jarvismayur/Cipher_Craftt/blob/main/LICENSE). See the LICENSE file for details.
 
 ## Contact and Issues
-If you have any questions, suggestions, or encounter issues, please feel free to [open an issue](https://github.com/yourusername/cipher-craftt/issues) on the GitHub repository. For direct communication, you can reach out to Mayur Tembhare via [email](mailto:tembharemayur@gmail.com) .
+If you have any questions, suggestions, or encounter issues, please feel free to [open an issue](https://github.com/jarvismayur/cipher-craftt/issues) on the GitHub repository. For direct communication, you can reach out to Mayur Tembhare via [email](mailto:tembharemayur@gmail.com) .
