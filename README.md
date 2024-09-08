@@ -62,7 +62,7 @@ cipher-craftt [options]
 - `--generate-password`: Generates a random password.
 
 ```bash
-cipher-craftt --generate-password
+cipher_craftt --generate-password
 ```
 Options:
 
@@ -83,7 +83,7 @@ Options:
 -  `--generate-passphrase`: Generates a passphrase based on a word list.
 
 ```bash
-cipher-craftt --generate-passphrase 
+cipher_craftt --generate-passphrase 
 ```
 Options:
 
@@ -109,13 +109,13 @@ Options:
 - `--calculate-entropy`: Calculate the entropy of a given password.
 
 ```bash
-cipher-craftt --calculate-entropy your_password
+cipher_craftt --calculate-entropy your_password
 ```
 ### 4. **Password Expiry Check**
 - `--check-expiry`: Check if a password has expired.
 
 ```bash
-cipher-craftt --check-expiry your_password
+cipher_craftt --check-expiry your_password
 ```
 Options:
 
@@ -124,52 +124,52 @@ Options:
 - `--record-password`: Record the creation date of a new password.
 
 ```bash
-cipher-craftt --record-password your_password
+cipher_craftt --record-password your_password
 ```
 - `--check-history`: Check if a password has been used before.
 
 ```bash
-cipher-craftt --check-history your_password
+cipher_craftt --check-history your_password
 ```
 - `--max-history`: Limit the number of stored passwords in history.
 
 ```bash
-cipher-craftt --max-history 100
+cipher_craftt --max-history 100
 ```
 ### 6. **Data Breach Check**
 - `--check-breach`: Check if a password has been involved in a data breach.
 
 ```bash
-cipher-craftt --check-breach your_password
+cipher_craftt --check-breach your_password
 ```
 ### 7. **Secure Password Sharing**
 - `--share-password`: Encrypt and share a password securely.
 
 ```bash
-cipher-craftt --share-password your_password
+cipher_craftt --share-password your_password
 ```
 - `--decrypt-password`: Decrypt a shared password.
 
 ```bash
-cipher-craftt --decrypt-password encrypted_password key
+cipher_craftt --decrypt-password encrypted_password key
 ```
 ### 8. **Pronunciation Guide**
 - `--pronunciation-guide`: Generate a pronunciation guide for a password.
 
 ```bash
-cipher-craftt --pronunciation-guide your_password
+cipher_craftt --pronunciation-guide your_password
 ```
 ### 9. **Password Strength Check**
 - `--check-strength`: Check the strength of the given password.
 
 ```bash
-cipher-craftt --check-strength your_password
+cipher_craftt --check-strength your_password
 ```
 ### 10. **Mnemonic Password Generation**
 - `--generate-mnemonic`: Generate a mnemonic-based password.
 
 ```bash
-cipher-craftt --generate-mnemonic --wordlist path/to/wordlist.txt
+cipher_craftt --generate-mnemonic --wordlist path/to/wordlist.txt
 ```
 Options:
 
@@ -180,44 +180,44 @@ Options:
 - `--context`: Specify the context for the password generation (e.g., finance, social, work).
 
 ```bash
-cipher-craftt --generate-password --context finance
+cipher_craftt --generate-password --context finance
 ```
 ### 12. TOTP (Time-based One-Time Password)
 - `--generate-totp`: Generate a TOTP using the provided secret.
 
 ```bash
-cipher-craftt --generate-totp your_secret
+cipher_craftt --generate-totp your_secret
 ```
 - `--verify-totp`: Verify a TOTP using the provided secret and OTP.
 
 ```bash
-cipher-craftt --verify-totp your_secret your_otp
+cipher_craftt --verify-totp your_secret your_otp
 ```
 ## Examples
 - Generate a password with specific constraints:
 
 ```bash
-cipher-craftt --generate-password -l 16 --no-special --min-digits 2 --personalization "MySecret!"
+cipher_craftt --generate-password -l 16 --no-special --min-digits 2 --personalization "MySecret!"
 ```
 - Generate a passphrase with a custom word list and separator:
 
 ```bash
-cipher-craftt --generate-passphrase --wordlist path/to/wordlist.txt --separator "_"
+cipher_craftt --generate-passphrase --wordlist path/to/wordlist.txt --separator "_"
 ```
 - Check if a password has expired:
 
 ```bash
-cipher-craftt --check-expiry your_password --expiry-days 60
+cipher_craftt --check-expiry your_password --expiry-days 60
 ```
 - Encrypt and share a password securely:
 
 ```bash
-cipher-craftt --share-password your_password
+cipher_craftt --share-password your_password
 ```
 - Generate a TOTP:
 
 ```bash
-cipher-craftt --generate-totp your_secret
+cipher_craftt --generate-totp your_secret
 ```
 
 ## Use Cases and Real-Life Implications of CipherCraft

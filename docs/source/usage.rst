@@ -16,7 +16,7 @@ Available Options
 
    .. code-block:: bash
 
-        cipher-craftt --generate-password
+        cipher_craftt --generate-password
 
    Options:
 
@@ -39,7 +39,7 @@ Available Options
 
    .. code-block:: bash
 
-        cipher-craftt --generate-passphrase 
+        cipher_craftt --generate-passphrase 
 
    Options:
 
@@ -67,7 +67,7 @@ Available Options
 
    .. code-block:: bash
 
-        cipher-craftt --calculate-entropy your_password
+        cipher_craftt --calculate-entropy your_password
 
 4. **Password Expiry Check**
 
@@ -75,7 +75,7 @@ Available Options
 
    .. code-block:: bash
 
-        cipher-craftt --check-expiry your_password
+        cipher_craftt --check-expiry your_password
 
    Options:
 
@@ -87,19 +87,19 @@ Available Options
 
    .. code-block:: bash
 
-        cipher-craftt --record-password your_password
+        cipher_craftt --record-password your_password
 
    - ``--check-history``: Check if a password has been used before.
 
    .. code-block:: bash
 
-        cipher-craftt --check-history your_password
+        cipher_craftt --check-history your_password
 
    - ``--max-history``: Limit the number of stored passwords in history.
 
    .. code-block:: bash
 
-        cipher-craftt --max-history 100
+        cipher_craftt --max-history 100
 
 6. **Data Breach Check**
 
@@ -107,7 +107,7 @@ Available Options
 
    .. code-block:: bash
 
-        cipher-craftt --check-breach your_password
+        cipher_craftt --check-breach your_password
 
 7. **Secure Password Sharing**
 
@@ -115,13 +115,13 @@ Available Options
 
    .. code-block:: bash
 
-        cipher-craftt --share-password your_password
+        cipher_craftt --share-password your_password
 
    - ``--decrypt-password``: Decrypt a shared password.
 
    .. code-block:: bash
 
-        cipher-craftt --decrypt-password encrypted_password key
+        cipher_craftt --decrypt-password encrypted_password key
 
 8. **Pronunciation Guide**
 
@@ -129,7 +129,7 @@ Available Options
 
    .. code-block:: bash
 
-        cipher-craftt --pronunciation-guide your_password
+        cipher_craftt --pronunciation-guide your_password
 
 9. **Password Strength Check**
 
@@ -137,7 +137,7 @@ Available Options
 
    .. code-block:: bash
 
-        cipher-craftt --check-strength your_password
+        cipher_craftt --check-strength your_password
 
 10. **Mnemonic Password Generation**
 
@@ -145,7 +145,7 @@ Available Options
 
     .. code-block:: bash
 
-        cipher-craftt --generate-mnemonic --wordlist path/to/wordlist.txt
+        cipher_craftt --generate-mnemonic --wordlist path/to/wordlist.txt
 
     Options:
 
@@ -160,7 +160,7 @@ Available Options
 
     .. code-block:: bash
 
-        cipher-craftt --generate-password --context finance
+        cipher_craftt --generate-password --context finance
 
 12. **TOTP (Time-based One-Time Password)**
 
@@ -168,10 +168,10 @@ Available Options
 
     .. code-block:: bash
 
-        cipher-craftt --generate-totp your_secret
+        cipher_craftt --generate-totp your_secret
 
     - ``--verify-totp``: Verify a TOTP using the provided secret and OTP.
 
     .. code-block:: bash
 
-        cipher-craftt --verify-totp your_secret your_otp
+        cipher_craftt --verify-totp your_secret your_otp
