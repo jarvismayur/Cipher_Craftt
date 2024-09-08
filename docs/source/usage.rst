@@ -39,7 +39,7 @@ Available Options
 
    .. code-block:: bash
 
-        python cli.py --generate-passphrase 
+        cipher-craftt --generate-passphrase 
 
    Options:
 
