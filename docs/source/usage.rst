@@ -163,7 +163,7 @@ Available Options
         cipher_craftt --generate-password --context finance
 
      
-Each context has its own security policy. Below is a summary of the available contexts and their respective password policies:
+     Each context has its own security policy. Below is a summary of the available contexts and their respective password policies:
 
      .. list-table:: Context Policies
           :header-rows: 1
