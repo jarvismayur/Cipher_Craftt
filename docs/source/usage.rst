@@ -162,89 +162,89 @@ Available Options
 
         cipher_craftt --generate-password --context finance
 
-     ach context has its own security policy. Below is a summary of the available contexts and their respective password policies:
+     Each context has its own security policy. Below is a summary of the available contexts and their respective password policies:
 
-.. list-table:: Context Policies
-   :header-rows: 1
-   :widths: 15 35 10 10 10 10 20
+     .. list-table:: Context Policies
+     :header-rows: 1
+     :widths: 15 35 10 10 10 10 20
 
-   * - Context
-     - Description
-     - Length
-     - Uppercase
-     - Lowercase
-     - Digits
-     - Special Characters
-   * - finance
-     - For financial services
-     - 16
-     - Yes
-     - Yes
-     - Yes
-     - Yes
-   * - social
-     - For social media accounts
-     - 10
-     - Yes
-     - Yes
-     - Yes
-     - No
-   * - work
-     - For work-related applications
-     - 12
-     - Yes
-     - Yes
-     - Yes
-     - Yes
-   * - gaming
-     - For online gaming accounts
-     - 8
-     - No
-     - Yes
-     - Yes
-     - No
-   * - email
-     - For email accounts
-     - 14
-     - Yes
-     - Yes
-     - Yes
-     - Yes
-   * - banking
-     - For banking and financial platforms
-     - 20
-     - Yes
-     - Yes
-     - Yes
-     - Yes
-   * - shopping
-     - For shopping platforms
-     - 12
-     - Yes
-     - Yes
-     - Yes
-     - No
-   * - medical
-     - For healthcare services
-     - 18
-     - Yes
-     - Yes
-     - Yes
-     - Yes
-   * - cloud
-     - For cloud storage and services
-     - 16
-     - Yes
-     - Yes
-     - Yes
-     - Yes
-   * - secure
-     - For highly sensitive information
-     - 24
-     - Yes
-     - Yes
-     - Yes
-     - Yes
+     * - Context
+          - Description
+          - Length
+          - Uppercase
+          - Lowercase
+          - Digits
+          - Special Characters
+     * - finance
+          - For financial services
+          - 16
+          - Yes
+          - Yes
+          - Yes
+          - Yes
+     * - social
+          - For social media accounts
+          - 10
+          - Yes
+          - Yes
+          - Yes
+          - No
+     * - work
+          - For work-related applications
+          - 12
+          - Yes
+          - Yes
+          - Yes
+          - Yes
+     * - gaming
+          - For online gaming accounts
+          - 8
+          - No
+          - Yes
+          - Yes
+          - No
+     * - email
+          - For email accounts
+          - 14
+          - Yes
+          - Yes
+          - Yes
+          - Yes
+     * - banking
+          - For banking and financial platforms
+          - 20
+          - Yes
+          - Yes
+          - Yes
+          - Yes
+     * - shopping
+          - For shopping platforms
+          - 12
+          - Yes
+          - Yes
+          - Yes
+          - No
+     * - medical
+          - For healthcare services
+          - 18
+          - Yes
+          - Yes
+          - Yes
+          - Yes
+     * - cloud
+          - For cloud storage and services
+          - 16
+          - Yes
+          - Yes
+          - Yes
+          - Yes
+     * - secure
+          - For highly sensitive information
+          - 24
+          - Yes
+          - Yes
+          - Yes
+          - Yes
 
 12. **TOTP (Time-based One-Time Password)**
 
