@@ -6,7 +6,7 @@ Thank you for considering contributing to CipherCraft! Your contributions are in
 
 ### 1. Fork the Repository
 
-1. Go to the [CipherCraft GitHub repository](https://github.com/jarvismayur/ciphercraft).
+1. Go to the [CipherCrafttGitHub repository](https://github.com/jarvismayur/ciphercraft).
 2. Click the "Fork" button in the top-right corner of the page.
 3. This will create a copy of the repository in your GitHub account.
 
@@ -55,7 +55,7 @@ Then push your branch to your fork:
 git push origin feature/your-feature-name
 ```
 ### 7. Submit a Pull Request
-- Go to the original CipherCraft repository.
+- Go to the original CipherCrafttrepository.
 - Click on the "Pull Requests" tab.
 - Click on "New Pull Request".
 - Select your branch from the "compare" dropdown.

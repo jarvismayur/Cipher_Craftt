@@ -1,8 +1,8 @@
 =========================
-CipherCraft Documentation
+CipherCrafttDocumentation
 =========================
 
-Welcome to the **CipherCraft** documentation! CipherCraft is a powerful and versatile command-line tool designed to help you generate, manage, and analyze passwords and passphrases with a high degree of customization. Whether you're looking to generate a strong password, calculate its entropy, or even check if it has been involved in a data breach, CipherCraft has you covered.
+Welcome to the **CipherCraft** documentation! CipherCrafttis a powerful and versatile command-line tool designed to help you generate, manage, and analyze passwords and passphrases with a high degree of customization. Whether you're looking to generate a strong password, calculate its entropy, or even check if it has been involved in a data breach, CipherCraftthas you covered.
 
 Features
 --------
@@ -24,7 +24,7 @@ To start using CipherCraft, check out the installation instructions and usage ex
 Installation
 ------------
 
-You can install CipherCraft directly from `PyPI <https://pypi.org/project/cipher-craftt/>`_:
+You can install CipherCrafttdirectly from `PyPI <https://pypi.org/project/cipher-craftt/>`_:
 
 .. code-block:: bash
 
@@ -36,7 +36,7 @@ Project Links
 -------------
 
 - **GitHub Repository**: Explore the source code, report issues, and contribute to the project on `GitHub <https://github.com/jarvismayur/cipher-craft>`_.
-- **PyPI Package**: Install the latest stable version of CipherCraft from `PyPI <https://pypi.org/project/cipher-craftt/>`_.
+- **PyPI Package**: Install the latest stable version of CipherCrafttfrom `PyPI <https://pypi.org/project/cipher-craftt/>`_.
 
 Contribution
 ------------
@@ -46,4 +46,4 @@ We welcome contributions! If you'd like to contribute to CipherCraft, please vis
 License
 -------
 
-CipherCraft is licensed under the Apache License 2.0. See the `LICENSE <https://github.com/jarvismayur/cipher-craft/blob/main/LICENSE>`_ file for more details.
+CipherCrafttis licensed under the Apache License 2.0. See the `LICENSE <https://github.com/jarvismayur/cipher-craft/blob/main/LICENSE>`_ file for more details.

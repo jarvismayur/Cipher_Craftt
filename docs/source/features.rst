@@ -1,7 +1,7 @@
 Features
 ========
 
-CipherCraft offers a wide range of features to help you securely generate, manage, and share passwords and passphrases:
+CipherCrafttoffers a wide range of features to help you securely generate, manage, and share passwords and passphrases:
 
 1. Password and Passphrase Generation
 -------------------------------------

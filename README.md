@@ -1,11 +1,11 @@
-# CipherCraft
-CipherCraft is a versatile and secure password generator designed to help you create strong, memorable passwords with ease. With a range of customizable features and unique tools, CipherCraft ensures your passwords are not only secure but also tailored to your needs.
+# CipherCraftt
+CipherCraftt is a versatile and secure password generator designed to help you create strong, memorable passwords with ease. With a range of customizable features and unique tools, CipherCraftt ensures your passwords are not only secure but also tailored to your needs.
 
 - For detailed documentation and usage instructions, please visit our [Read the Docs page](https://cipher-craftt.readthedocs.io).
 - You can also explore the source code and contribute to the project on our [GitHub repository](https://github.com/jarvismayur/cipher-craftt).
 
 ## Features
-CipherCraft offers a wide range of features to help you securely generate, manage, and share passwords and passphrases:
+CipherCraftt offers a wide range of features to help you securely generate, manage, and share passwords and passphrases:
 
 1. **Password and Passphrase Generation**
 - **Random Password Generator**: Generate strong, random passwords with customizable options such as length, inclusion/exclusion of uppercase letters, lowercase letters, digits, and special characters.
@@ -37,19 +37,19 @@ CipherCraft offers a wide range of features to help you securely generate, manag
 
   
 ## Installation
-You can install CipherCraft via PyPI:
+You can install CipherCraftt via PyPI:
 
 ```bash
 pip install cipher-craftt
 ```
 
 ## Updating the Package
-To ensure you have the latest features and improvements, you can easily update the CipherCraft package using pip. Open your command line interface and run the following command:
+To ensure you have the latest features and improvements, you can easily update the CipherCraftt package using pip. Open your command line interface and run the following command:
 
 ```bash
 pip install --upgrade cipher-craftt
 ```
-This command will update your CipherCraft package to the latest version available on [PyPI](https://pypi.org/project/cipher-craftt/).
+This command will update your CipherCraftt package to the latest version available on [PyPI](https://pypi.org/project/cipher-craftt/).
 
 ## Basic Usage
 To use the CLI, run the following command:
@@ -235,43 +235,43 @@ cipher_craftt --share-password your_password
 cipher_craftt --generate-totp your_secret
 ```
 
-## Use Cases and Real-Life Implications of CipherCraft
+## Use Cases and Real-Life Implications of CipherCraftt
 1. **Personal Password Management**
 
 - **Use Case**: A user needs to create a strong and memorable password for various online accounts, such as banking, social media, or email.
-- **Real-Life Implication**: With CipherCraft, users can generate secure passwords that meet specific requirements, reducing the risk of account breaches due to weak or reused passwords. The tool also allows for personalized input, making passwords easier to remember.
+- **Real-Life Implication**: With CipherCraftt, users can generate secure passwords that meet specific requirements, reducing the risk of account breaches due to weak or reused passwords. The tool also allows for personalized input, making passwords easier to remember.
 2. **Corporate Security Compliance**
 
 - **Use Case**: An organization requires its employees to regularly update their passwords and ensure they are strong enough to meet security policies.
-- **Real-Life Implication**: CipherCraft can generate complex passwords with specific constraints, such as including a minimum number of digits or special characters. It also tracks password expiry and ensures that employees rotate their passwords as required, helping organizations maintain compliance with security standards.
+- **Real-Life Implication**: CipherCraftt can generate complex passwords with specific constraints, such as including a minimum number of digits or special characters. It also tracks password expiry and ensures that employees rotate their passwords as required, helping organizations maintain compliance with security standards.
 3. **Multilingual Passphrase Generation**
 
 - **Use Case**: A user or organization in a non-English-speaking country needs to generate passphrases in their native language for easier memorization and enhanced usability.
-- **Real-Life Implication**: CipherCraft supports multiple languages for passphrase generation, making it accessible and practical for users worldwide. This feature can help in creating passphrases that are both secure and culturally relevant.
+- **Real-Life Implication**: CipherCraftt supports multiple languages for passphrase generation, making it accessible and practical for users worldwide. This feature can help in creating passphrases that are both secure and culturally relevant.
 4. **Data Breach Prevention**
 
 - **Use Case**: A user wants to check if their existing passwords have been compromised in any known data breaches.
-- **Real-Life Implication**: CipherCraft can check passwords against databases of known breaches, alerting users to compromised credentials and prompting them to update their passwords immediately, thereby reducing the risk of unauthorized access.
+- **Real-Life Implication**: CipherCraftt can check passwords against databases of known breaches, alerting users to compromised credentials and prompting them to update their passwords immediately, thereby reducing the risk of unauthorized access.
 5. **Secure Password Sharing**
 
 - **Use Case**: A team member needs to securely share a password with a colleague.
-- **Real-Life Implication**: CipherCraft offers secure password sharing options, ensuring that passwords are encrypted before being sent. This reduces the risk of interception or unauthorized access during transmission.
+- **Real-Life Implication**: CipherCraftt offers secure password sharing options, ensuring that passwords are encrypted before being sent. This reduces the risk of interception or unauthorized access during transmission.
 6. Password Entropy Calculation
 
 - **Use Case**: A cybersecurity professional needs to assess the strength of a password by calculating its entropy.
-- **Real-Life Implication**: CipherCraft calculates the entropy of passwords, providing a quantifiable measure of password strength. This helps professionals and users alike to understand the robustness of their passwords against various attack vectors.
+- **Real-Life Implication**: CipherCraftt calculates the entropy of passwords, providing a quantifiable measure of password strength. This helps professionals and users alike to understand the robustness of their passwords against various attack vectors.
 7. **Context-Aware Password Generation**
 
 - **Use Case**: A user needs to generate a password tailored specifically for different contexts, such as financial accounts, social media, or work-related applications.
-- **Real-Life Implication**: CipherCraft’s context-aware password generation ensures that passwords are optimized for their intended use, enhancing both security and usability across different platforms and scenarios.
+- **Real-Life Implication**: CipherCraftt’s context-aware password generation ensures that passwords are optimized for their intended use, enhancing both security and usability across different platforms and scenarios.
 8. **Historical Password Management**
 
 - **Use Case**: A user wants to ensure they are not reusing old passwords or violating a maximum password history policy.
-- **Real-Life Implication**: CipherCraft manages password history, allowing users to track and compare past passwords. This feature helps prevent password reuse and ensures compliance with security policies that restrict password repetition.
+- **Real-Life Implication**: CipherCraftt manages password history, allowing users to track and compare past passwords. This feature helps prevent password reuse and ensures compliance with security policies that restrict password repetition.
 
 
 ## License
-CipherCraft is licensed under the MIT [License](https://github.com/jarvismayur/Cipher_Craftt/blob/main/LICENSE). See the LICENSE file for details.
+CipherCraftt is licensed under the MIT [License](https://github.com/jarvismayur/Cipher_Craftt/blob/main/LICENSE). See the LICENSE file for details.
 
 ## Contact and Issues
 If you have any questions, suggestions, or encounter issues, please feel free to [open an issue](https://github.com/jarvismayur/cipher_craftt/issues) on the GitHub repository. For direct communication, you can reach out to Mayur Tembhare via [email](mailto:tembharemayur@gmail.com) .
